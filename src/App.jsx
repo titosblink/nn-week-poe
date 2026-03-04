@@ -30,15 +30,12 @@ export default function App() {
         {/* Header */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-black mb-2">
-            <div className="inline-block p-3 bg-white rounded-2xl shadow-sm border border-slate-100 mb-4">
-              
+            <center>
               <img 
-                src="/navylogo.png" 
-                alt="Event Preview" 
-                className="w-full h-full object-cover"
+                src="/nnlogo.png" 
               />
-            </div>
-          Event Programme</h1>
+              </center>
+          NN@70 - Programme of Event</h1>
           <p className="text-slate-500">Your complete schedule at a glance</p>
         </header>
 
@@ -65,6 +62,7 @@ export default function App() {
 
           <button className="p-2 hover:bg-white rounded-full transition-colors"><ChevronRight /></button>
         </div>
+        
 
         {/* Animated Content Area */}
         <div className="overflow-hidden relative">
@@ -97,7 +95,10 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
         </div>
+          <br/>
+        <hr className="border-gray-300"/>
       </div>
     </div>
+    
   );
 }
