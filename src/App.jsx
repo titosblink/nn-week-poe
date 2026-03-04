@@ -31,7 +31,12 @@ export default function App() {
         <header className="text-center mb-12">
           <h1 className="text-4xl font-black mb-2">
             <div className="inline-block p-3 bg-white rounded-2xl shadow-sm border border-slate-100 mb-4">
-              <Calendar className="w-8 h-8 text-blue-600" />
+              
+              <img 
+                src="/navylogo.png" 
+                alt="Event Preview" 
+                className="w-full h-full object-cover"
+              />
             </div>
           Event Programme</h1>
           <p className="text-slate-500">Your complete schedule at a glance</p>
