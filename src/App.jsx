@@ -97,6 +97,7 @@ export default function App() {
         </div>
           <br/>
         <hr className="border-gray-300"/>
+        <center className="text-slate-500">Designed by Lt OC Aluu</center>
       </div>
     </div>
     
