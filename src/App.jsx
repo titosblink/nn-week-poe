@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { Calendar, Clock, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const eventData = {
