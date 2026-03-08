@@ -1,21 +1,33 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // Add this
-import { VitePWA } from 'vite-plugin-pwa';
+import { VitePWA } from 'vite-plugin-pwa'
+
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(), 
-    VitePWA({ 
+    VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'My App Name',
-        short_name: 'App',
-        display: 'standalone', // This hides the URL bar
-        theme_color: '#ffffff',
+        name: 'My Web App',
+        short_name: 'MyApp',
+        start_url: '/',
+        display: 'standalone',
+        background_color: '#ffffff',
+        theme_color: '#000000',
+        icons: [
+          {
+            src: '/nnlogo.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: '/nnlogo.png',
+            sizes: '512x512',
+            type: 'image/png'
+          }
+        ]
       }
-    })// Add this
-  ],
+    })
+  ]
 })
-
-
